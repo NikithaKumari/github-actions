@@ -6,8 +6,6 @@ COPY pom.xml ./
 
 COPY . .
 
-RUN ./mvnw clean package -DskipTests
-
 FROM openjdk:17-slim
 
 WORKDIR /app
